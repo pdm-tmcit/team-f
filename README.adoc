@@ -50,7 +50,8 @@ https://www.python.org/downloads/
 
 上記のURLから自分のOSにあったpython3.7のパッケージをダウンロードする(最新版は3.7.7)。ダウンロードしたパッケージを実行し、インストールする。
 
-または、Anacondaをインストールする。+
+または、Anacondaをインストールする。
+
 https://www.anaconda.com/products/individual
 
 上記のURLから自分のOSにあったpython3.7用のAnacondaのインストーラーをダウンロードする。インストーラーを実行してAnaconda本体(約3GB)をインストールする。インストールしたら、Anaconda Promptを実行するとbase環境（最初からある環境）でコマンドプロンプトが実行し、python(3.7.6)が使用できるようになる。また、Anaconda NavigatorでEnvironmentsタブをクリックし、createボタンで新しい環境を作成し、その環境で実行することもできる。
