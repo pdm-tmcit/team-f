@@ -1,18 +1,10 @@
 #!/bin/bash
+# もしargv[0]が0以上だったら、headする
 function head_file() {
-    if [ $1 -ne 0 ]
-    then
-        cat | head -n $1
-     else
-         cat
-     fi
+    [ $1 -ne 0 ] && head -n $1 || cat
 }
 
-head_line=0
-if [ -n $1 ]
-then
-    head_line=$1
-fi
+head_line=$( [ -n $1 ] && echo "0" || echo $1 )
 
 for i in `seq 2 6`
 do
