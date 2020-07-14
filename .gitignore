@@ -8,6 +8,7 @@ __pycache__/
 *.sw[po]
 *.tmp
 .DS_Store
+nohup.out
 
 ngram_output/
 village_talklist/
