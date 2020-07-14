@@ -8,3 +8,5 @@ __pycache__/
 *.sw[po]
 *.tmp
 .DS_Store
+
+ngram_output/
