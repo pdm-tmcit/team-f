@@ -1,4 +1,7 @@
 #!/bin/bash
+# Usage: cat village_g*.csv | ./predict.sh
+# 出力: 人狼の確率,名前
+
 function get_message() {
     awk -F, '{ for(i=4;i<NF;i++)printf("%s", $i);print $NF }'
 }
@@ -27,5 +30,5 @@ do
     count="$( echo "$l" | grep -o "^[ 0-9]*" )"
     echo "$( echo "5k100 $count*$maxc/p" | dc | sed 's/^\./0\./g' ),$name"
 done
-exit
+
 rm -f "$TMPFILE*"
