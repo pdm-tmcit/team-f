@@ -10,6 +10,6 @@ __pycache__/
 .DS_Store
 nohup.out
 
-ngram_output/
-village_talklist/
 zinrou.csv
+h*ngram*.txt
+h*ngram*.txt.checked
