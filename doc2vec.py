@@ -3,6 +3,7 @@ import MeCab
 from gensim.models.doc2vec import Doc2Vec
 from gensim.models.doc2vec import TaggedDocument
 
+# textを単語区切りのリストへ
 def words(text):
     output = []
     tagger = MeCab.Tagger('-Ochasen')
@@ -24,6 +25,7 @@ def words(text):
 
     return output
 
+# 標準入力
 stdin = open('/dev/stdin', 'r')
 documents = [ stdin.readline() ]
 line = stdin.readline()
@@ -32,13 +34,16 @@ while line:
     line = stdin.readline()
 stdin.close()
 
+# 学習セットの作成
 train_data = []
 for i, document in enumerate(documents):
     print(i, words(document))
     train_data.append(TaggedDocument(words=words(document), tags=[str(i)]))
 
+# 学習モデルの生成
 model = Doc2Vec(documents=train_data, min_count=1, alpha=0.005, epochs=40, sample=20, dm=1)
 
+# 表示
 for i, document in enumerate(documents):
     print(str(i), "\t", document)
     k = 0
