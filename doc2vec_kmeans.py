@@ -12,19 +12,20 @@ from sklearn.decomposition import PCA
 # textを単語区切りのリストへ
 def words(text):
     output = []
-    tagger = MeCab.Tagger('-Ochasen')
+    tagger = MeCab.Tagger('-Owakati -d /usr/local/lib/mecab/dic/mecab-ipadic-neologd')
     tagger.parse('')
     node = tagger.parseToNode(text)
 
     while node:
         anode = node.feature.split(',')
         wtype = anode[0]
-        word = node.surface
+#       word = node.surface
+        word = '*'
 
         if word == '*' and node.feature.split(",")[6].isalpha():
             word = anode[6]
 
-        if len(word) > 0:
+        if wtype in ['名詞', '動詞'] and len(word) > 0:
             output.append(word)
 
         node = node.next
@@ -81,7 +82,7 @@ else:
     print('\t\t[\033[32mSkip\033[0m]')
 
 # クラスタリング
-data = [ model[i] for i in range(documents) ]
+data = [ model[i] for i in range(len(documents)) ]
 print('[+] Clusteging...', end='', flush=True)
 if not os.path.isfile('kmeans_pickle.tmp'):
     kmeans = KMeans(n_clusters=7).fit(data)
