@@ -1,5 +1,57 @@
 #!/usr/bin/env python3
+import pickle
+import re
+import csv
 import random
+import string
+import mojimoji
+import MeCab
+from gensim.models.doc2vec import Doc2Vec
+from gensim.models.doc2vec import TaggedDocument
+
+# mecabのneologd辞書のファイルパス
+MECAB_NEOLOGD = '/usr/local/lib/mecab/dic/mecab-ipadic-neologd'
+
+def preprocessing_text(text):
+    # 半角・全角の統一
+    text = mojimoji.han_to_zen(text)
+    # 改行、半角スペース、全角スペースを削除
+    text = re.sub('\r', '', text)
+    text = re.sub('\n', '', text)
+    text = re.sub('　', '', text)
+    text = re.sub(' ', '', text)
+    # 数字文字の一律「0」化
+    text = re.sub(r'[0-9 ０-９]+', '0', text)  # 数字
+
+    # カンマ、ピリオド以外の記号をスペースに置換
+    for p in string.punctuation:
+        if (p == ".") or (p == ","):
+            continue
+        else:
+            text = text.replace(p, " ")
+
+    return text
+
+# 分かち書き
+def tokenizer_mecab(text):
+    m_t = MeCab.Tagger('-Owakati')
+    try:
+        f = open(MECAB_NEOLOGD, 'r')
+        f.close()
+    except IsADirectoryError:
+         m_t = MeCab.Tagger('-Owakati -d '+MECAB_NEOLOGD)
+    except FileNotFoundError:
+        pass
+
+    text = m_t.parse(text)  # これでスペースで単語が区切られる
+    ret = text.strip().split()  # スペース部分で区切ったリストに変換
+    return ret
+
+# 前処理と分かち書きをまとめた関数を定義
+def tokenizer_with_preprocessing(text):
+    text = preprocessing_text(text)  # 前処理の正規化
+    ret = tokenizer_mecab(text)  # Mecabの単語分割
+    return ret
 
 # 基本設計
 class BaseCh():
@@ -49,9 +101,35 @@ class Position0(BaseCh):
         self.output(seq)
 
 if __name__ == '__main__':
+    '''
+    documents = [[],[]]
+    with open('corpus.csv', 'r') as f:
+        for row in csv.reader(f, delimiter='\t'):
+            documents[0].append(tokenizer_with_preprocessing(row[0]))
+            documents[1].append(row[1])
+
+    vec = [ {} for i in range(len(documents)) ]
+    for i in set(documents[0]):
+        for j in range(len(documents)):
+            vec[j][i] = tokenized[j].count(i)
+
+    print(vec)
+
+    ue = st1 = st2 = 0
+    for i in tokens:
+        ue += vec[0][i] * vec[1][i]
+        st1 += vec[0][i] ** 2
+        st2 += vec[1][i] ** 2
+
+    print(ue / (math.sqrt(st1) * math.sqrt(st2)))
+    '''
+
     position0 = Position0()
     while True:
-        s = input('> ')
-        if s == 'quit':
+        try:
+            s = input()
+            if s == 'quit':
+                break
+        except EOFError:
             break
-        position0.say()
+    position0.say()

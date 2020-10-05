@@ -1,0 +1,29 @@
+team-f
+|--.gitignore
+|--README.md
+|--cat_csv.py
+|--corpus.csv
+|--main.py
+|--ngram.py
+|--wolf_ngram.sh
+|--ngram_output
+|  |--cal_P_zinrou.sh
+|  |--check_ngram.sh
+|  |--h0_ngram2.txt
+|  |--h0_ngram3.txt
+|  |--h0_ngram4.txt
+|  |--h0_ngram5.txt
+|  |--h0_ngram6.txt
+|  |--make_output.sh
+|  |--output2list.sh
+|  |--predict.sh
+|  |--test_data_with_slot
+|  |  |--villager_win
+|  |  |  |--テストデータ郡(村人勝)
+|  |--wolf_win
+|  |  |  |--テストデータ郡(村人負)
+|--village_talklist
+|  |--villager_win
+|  |  |  |--トレインデータ郡(村人勝)
+|  |--wolf_win
+|  |  |  |--トレインデータ郡(村人負)
