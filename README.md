@@ -1,13 +1,34 @@
-# README - arai branch
+# README
 
-- wolf_ngram.sh
+## ファイル説明
+- main.py
 
-  zinrou.csvに書かれている内容から、ngram_output/h0_ngram<数値>.txtを生成する。
+  発言モジュール
 
-  使い方
+  ngramで解析した結果からランダムに発言を行う
 
   ```
-  $ find . 
+  Usage: python main.py
   ```
 
-- 
+- wolf\_ngram.sh
+
+  zinrou.csvに書かれている内容から、ngram\_output/h0\_ngram<数値>.txtを生成する
+
+  ngram.py、ngram\_output、zinrou.csvに依存
+
+  ```
+  Usage: cat zinrou.csv | wolf\_ngram.sh [ファイルの何行から始めるか]
+  ```
+
+- ngram.py
+
+  ngramを行う
+
+  ```
+  Usage: cat ファイル | python ngram.py <数値>
+  ```
+
+- ngram\_output/
+
+  ngramの結果
