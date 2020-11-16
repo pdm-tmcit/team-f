@@ -1,0 +1,559 @@
+{
+	"@context": [
+		"https://werewolf.world/village/context/0.3/base.jsonld",
+		"https://werewolf.world/village/context/0.3/votingResult.jsonld"
+	],
+	"@id": "https://licos.online/state/0.3/village#3/systemMessage",
+	"village": {
+		"@context": "https://werewolf.world/village/context/0.3/village.jsonld",
+		"@id": "https://licos.online/state/0.3/village",
+		"id": 3,
+		"name": "Fearwick",
+		"totalNumberOfPlayers": 15,
+		"language": "ja",
+		"chatSettings": {
+			"@context": "https://werewolf.world/village/context/0.3/chatSettings.jsonld",
+			"@id": "https://licos.online/state/0.3/village#3/chatSettings",
+			"maxNumberOfChatMessages": 10,
+			"maxLengthOfUnicodeCodePoints": 140
+		}
+	},
+	"token": "3F2504E0-4F89-11D3-9A0C-0305E82C3301",
+	"phase": "noon",
+	"day": 1,
+	"phaseTimeLimit": 180,
+	"phaseStartTime": "2006-10-07T12:06:56.568+09:00",
+	"serverTimestamp": "2006-10-07T12:06:56.568+09:00",
+	"clientTimestamp": "2006-10-07T12:06:56.568+09:00",
+	"directionality": "server to client",
+	"intensionalDisclosureRange": "private",
+	"extensionalDisclosureRange": [],
+	"votingResultsSummary": [],
+	"votingResultsDetails": [],
+	"character": [
+		{
+			"@context": "https://werewolf.world/village/context/0.3/character.jsonld",
+			"@id": "https://licos.online/state/0.3/village#3/character#1",
+			"isMine": true,
+			"name": {
+				"en": "Adil",
+				"ja": "アーディル"
+			},
+			"image": "https://werewolf.world/image/0.3/character_icons/50x50/a_50x50.png",
+			"id": 1,
+			"status": "alive",
+			"update": {
+				"@id": "https://licos.online/state/0.3/village#3/character#1/update",
+				"phase": "morning",
+				"day": 1
+			},
+			"isAChoice": false
+		},
+		{
+			"@context": "https://werewolf.world/village/context/0.3/character.jsonld",
+			"@id": "https://licos.online/state/0.3/village#3/character#2",
+			"isMine": false,
+			"name": {
+				"en": "Borya",
+				"ja": "ボーリャ"
+			},
+			"image": "https://werewolf.world/image/0.3/character_icons/50x50/b_50x50.png",
+			"id": 2,
+			"status": "alive",
+			"update": {
+				"@id": "https://licos.online/state/0.3/village#3/character#2/update",
+				"phase": "morning",
+				"day": 1
+			},
+			"isAChoice": false
+		},
+		{
+			"@context": "https://werewolf.world/village/context/0.3/character.jsonld",
+			"@id": "https://licos.online/state/0.3/village#3/character#3",
+			"isMine": false,
+			"name": {
+				"en": "Chacha",
+				"ja": "チャチャ"
+			},
+			"image": "https://werewolf.world/image/0.3/character_icons/50x50/c_50x50.png",
+			"id": 3,
+			"status": "alive",
+			"update": {
+				"@id": "https://licos.online/state/0.3/village#3/character#3/update",
+				"phase": "morning",
+				"day": 1
+			},
+			"isAChoice": false
+		},
+		{
+			"@context": "https://werewolf.world/village/context/0.3/character.jsonld",
+			"@id": "https://licos.online/state/0.3/village#3/character#4",
+			"isMine": false,
+			"name": {
+				"en": "Devdatta",
+				"ja": "デヴゥダッタ"
+			},
+			"image": "https://werewolf.world/image/0.3/character_icons/50x50/d_50x50.png",
+			"id": 4,
+			"status": "alive",
+			"update": {
+				"@id": "https://licos.online/state/0.3/village#3/character#4/update",
+				"phase": "morning",
+				"day": 1
+			},
+			"isAChoice": false
+		},
+		{
+			"@context": "https://werewolf.world/village/context/0.3/character.jsonld",
+			"@id": "https://licos.online/state/0.3/village#3/character#5",
+			"isMine": false,
+			"name": {
+				"en": "Ekrem",
+				"ja": "エクレム"
+			},
+			"image": "https://werewolf.world/image/0.3/character_icons/50x50/e_50x50.png",
+			"id": 5,
+			"status": "alive",
+			"update": {
+				"@id": "https://licos.online/state/0.3/village#3/character#5/update",
+				"phase": "morning",
+				"day": 1
+			},
+			"isAChoice": false
+		},
+		{
+			"@context": "https://werewolf.world/village/context/0.3/character.jsonld",
+			"@id": "https://licos.online/state/0.3/village#3/character#6",
+			"isMine": false,
+			"name": {
+				"en": "Fernando",
+				"ja": "フェルナンド"
+			},
+			"image": "https://werewolf.world/image/0.3/character_icons/50x50/f_50x50.png",
+			"id": 6,
+			"status": "alive",
+			"update": {
+				"@id": "https://licos.online/state/0.3/village#3/character#6/update",
+				"phase": "morning",
+				"day": 1
+			},
+			"isAChoice": false
+		},
+		{
+			"@context": "https://werewolf.world/village/context/0.3/character.jsonld",
+			"@id": "https://licos.online/state/0.3/village#3/character#7",
+			"isMine": false,
+			"name": {
+				"en": "Gavriil",
+				"ja": "ガブリール"
+			},
+			"image": "https://werewolf.world/image/0.3/character_icons/50x50/g_50x50.png",
+			"id": 7,
+			"status": "alive",
+			"update": {
+				"@id": "https://licos.online/state/0.3/village#3/character#7/update",
+				"phase": "morning",
+				"day": 1
+			},
+			"isAChoice": false
+		},
+		{
+			"@context": "https://werewolf.world/village/context/0.3/character.jsonld",
+			"@id": "https://licos.online/state/0.3/village#3/character#8",
+			"isMine": false,
+			"name": {
+				"en": "Henrik",
+				"ja": "ヘンリック"
+			},
+			"image": "https://werewolf.world/image/0.3/character_icons/50x50/h_50x50.png",
+			"id": 8,
+			"status": "alive",
+			"update": {
+				"@id": "https://licos.online/state/0.3/village#3/character#8/update",
+				"phase": "morning",
+				"day": 1
+			},
+			"isAChoice": false
+		},
+		{
+			"@context": "https://werewolf.world/village/context/0.3/character.jsonld",
+			"@id": "https://licos.online/state/0.3/village#3/character#9",
+			"isMine": false,
+			"name": {
+				"en": "Ileanna",
+				"ja": "イレアナ"
+			},
+			"image": "https://werewolf.world/image/0.3/character_icons/50x50/i_50x50.png",
+			"id": 9,
+			"status": "alive",
+			"update": {
+				"@id": "https://licos.online/state/0.3/village#3/character#9/update",
+				"phase": "morning",
+				"day": 1
+			},
+			"isAChoice": false
+		},
+		{
+			"@context": "https://werewolf.world/village/context/0.3/character.jsonld",
+			"@id": "https://licos.online/state/0.3/village#3/character#10",
+			"isMine": false,
+			"name": {
+				"en": "Jasmin",
+				"ja": "ジャズミン"
+			},
+			"image": "https://werewolf.world/image/0.3/character_icons/50x50/j_50x50.png",
+			"id": 10,
+			"status": "alive",
+			"update": {
+				"@id": "https://licos.online/state/0.3/village#3/character#10/update",
+				"phase": "morning",
+				"day": 1
+			},
+			"isAChoice": false
+		},
+		{
+			"@context": "https://werewolf.world/village/context/0.3/character.jsonld",
+			"@id": "https://licos.online/state/0.3/village#3/character#11",
+			"isMine": false,
+			"name": {
+				"en": "Louise",
+				"ja": "ルイーズ"
+			},
+			"image": "https://werewolf.world/image/0.3/character_icons/50x50/l_50x50.png",
+			"id": 11,
+			"status": "alive",
+			"update": {
+				"@id": "https://licos.online/state/0.3/village#3/character#11/update",
+				"phase": "morning",
+				"day": 1
+			},
+			"isAChoice": false
+		},
+		{
+			"@context": "https://werewolf.world/village/context/0.3/character.jsonld",
+			"@id": "https://licos.online/state/0.3/village#3/character#12",
+			"isMine": false,
+			"name": {
+				"en": "Marthe",
+				"ja": "マーテ"
+			},
+			"image": "https://werewolf.world/image/0.3/character_icons/50x50/m_50x50.png",
+			"id": 12,
+			"status": "alive",
+			"update": {
+				"@id": "https://licos.online/state/0.3/village#3/character#12/update",
+				"phase": "morning",
+				"day": 1
+			},
+			"isAChoice": false
+		},
+		{
+			"@context": "https://werewolf.world/village/context/0.3/character.jsonld",
+			"@id": "https://licos.online/state/0.3/village#3/character#13",
+			"isMine": false,
+			"name": {
+				"en": "Nanyamka",
+				"ja": "ナニャンカ"
+			},
+			"image": "https://werewolf.world/image/0.3/character_icons/50x50/n_50x50.png",
+			"id": 13,
+			"status": "alive",
+			"update": {
+				"@id": "https://licos.online/state/0.3/village#3/character#13/update",
+				"phase": "morning",
+				"day": 1
+			},
+			"isAChoice": false
+		},
+		{
+			"@context": "https://werewolf.world/village/context/0.3/character.jsonld",
+			"@id": "https://licos.online/state/0.3/village#3/character#14",
+			"isMine": false,
+			"name": {
+				"en": "Oliwia",
+				"ja": "オリビア"
+			},
+			"image": "https://werewolf.world/image/0.3/character_icons/50x50/o_50x50.png",
+			"id": 14,
+			"status": "alive",
+			"update": {
+				"@id": "https://licos.online/state/0.3/village#3/character#14/update",
+				"phase": "morning",
+				"day": 1
+			},
+			"isAChoice": false
+		},
+		{
+			"@context": "https://werewolf.world/village/context/0.3/character.jsonld",
+			"@id": "https://licos.online/state/0.3/village#3/character#15",
+			"isMine": false,
+			"name": {
+				"en": "Ryan",
+				"ja": "ライアン"
+			},
+			"image": "https://werewolf.world/image/0.3/character_icons/50x50/r_50x50.png",
+			"id": 15,
+			"status": "alive",
+			"update": {
+				"@id": "https://licos.online/state/0.3/village#3/character#15/update",
+				"phase": "morning",
+				"day": 1
+			},
+			"isAChoice": false
+		}
+	],
+	"role": [
+		{
+			"@context": "https://werewolf.world/village/context/0.3/role.jsonld",
+			"@id": "https://licos.online/state/0.3/village#3/role#master",
+			"isMine": false,
+			"name": {
+				"en": "Master",
+				"ja": "マスター"
+			},
+			"image": "https://werewolf.world/image/0.3/role_icons/50x50withTI/master_50x50.png",
+			"numberOfPlayers": 1,
+			"board": []
+		},
+		{
+			"@context": "https://werewolf.world/village/context/0.3/role.jsonld",
+			"@id": "https://licos.online/state/0.3/village#3/role#villager",
+			"isMine": false,
+			"name": {
+				"en": "Villager",
+				"ja": "村人"
+			},
+			"image": "https://werewolf.world/image/0.3/role_icons/50x50withTI/villager_50x50.png",
+			"numberOfPlayers": 6,
+			"board": [
+				{
+					"@context": "https://werewolf.world/village/context/0.3/boardResult.jsonld",
+					"@id": "https://licos.online/state/0.3/village#3/role#villager/board#1",
+					"character": {
+						"@context": "https://werewolf.world/village/context/0.3/character.jsonld",
+						"@id": "https://licos.online/state/0.3/village#3/role#villager/board#1/character#1",
+						"id": 1,
+						"name": {
+							"en": "Adil",
+							"ja": "アーディル"
+						},
+						"image": "https://werewolf.world/image/0.3/character_icons/50x50/a_50x50.png"
+					},
+					"polarity": "negative",
+					"phase": "morning",
+					"day": 1
+				}
+			]
+		},
+		{
+			"@context": "https://werewolf.world/village/context/0.3/role.jsonld",
+			"@id": "https://licos.online/state/0.3/village#3/role#seer",
+			"isMine": true,
+			"name": {
+				"en": "Seer",
+				"ja": "占い師"
+			},
+			"image": "https://werewolf.world/image/0.3/role_icons/50x50withTI/seer_50x50.png",
+			"numberOfPlayers": 1,
+			"board": [
+				{
+					"@context": "https://werewolf.world/village/context/0.3/boardResult.jsonld",
+					"@id": "https://licos.online/state/0.3/village#3/role#seer/board#1",
+					"character": {
+						"@context": "https://werewolf.world/village/context/0.3/character.jsonld",
+						"@id": "https://licos.online/state/0.3/village#3/role#seer/board#1/character#1",
+						"id": 1,
+						"name": {
+							"en": "Adil",
+							"ja": "アーディル"
+						},
+						"image": "https://werewolf.world/image/0.3/character_icons/50x50/a_50x50.png"
+					},
+					"polarity": "positive",
+					"phase": "morning",
+					"day": 1
+				}
+			]
+		},
+		{
+			"@context": "https://werewolf.world/village/context/0.3/role.jsonld",
+			"@id": "https://licos.online/state/0.3/village#3/role#medium",
+			"isMine": false,
+			"name": {
+				"en": "Medium",
+				"ja": "霊媒師"
+			},
+			"image": "https://werewolf.world/image/0.3/role_icons/50x50withTI/medium_50x50.png",
+			"numberOfPlayers": 1,
+			"board": [
+				{
+					"@context": "https://werewolf.world/village/context/0.3/boardResult.jsonld",
+					"@id": "https://licos.online/state/0.3/village#3/role#medium/board#1",
+					"character": {
+						"@context": "https://werewolf.world/village/context/0.3/character.jsonld",
+						"@id": "https://licos.online/state/0.3/village#3/role#medium/board#1/character#1",
+						"id": 1,
+						"name": {
+							"en": "Adil",
+							"ja": "アーディル"
+						},
+						"image": "https://werewolf.world/image/0.3/character_icons/50x50/a_50x50.png"
+					},
+					"polarity": "negative",
+					"phase": "morning",
+					"day": 1
+				}
+			]
+		},
+		{
+			"@context": "https://werewolf.world/village/context/0.3/role.jsonld",
+			"@id": "https://licos.online/state/0.3/village#3/role#hunter",
+			"isMine": false,
+			"name": {
+				"en": "Hunter",
+				"ja": "狩人"
+			},
+			"image": "https://werewolf.world/image/0.3/role_icons/50x50withTI/hunter_50x50.png",
+			"numberOfPlayers": 1,
+			"board": [
+				{
+					"@context": "https://werewolf.world/village/context/0.3/boardResult.jsonld",
+					"@id": "https://licos.online/state/0.3/village#3/role#hunter/board#1",
+					"character": {
+						"@context": "https://werewolf.world/village/context/0.3/character.jsonld",
+						"@id": "https://licos.online/state/0.3/village#3/role#hunter/board#1/character#1",
+						"id": 1,
+						"name": {
+							"en": "Adil",
+							"ja": "アーディル"
+						},
+						"image": "https://werewolf.world/image/0.3/character_icons/50x50/a_50x50.png"
+					},
+					"polarity": "negative",
+					"phase": "morning",
+					"day": 1
+				}
+			]
+		},
+		{
+			"@context": "https://werewolf.world/village/context/0.3/role.jsonld",
+			"@id": "https://licos.online/state/0.3/village#3/role#mason",
+			"isMine": false,
+			"name": {
+				"en": "Mason",
+				"ja": "共有者"
+			},
+			"image": "https://werewolf.world/image/0.3/role_icons/50x50withTI/mason_50x50.png",
+			"numberOfPlayers": 2,
+			"board": [
+				{
+					"@context": "https://werewolf.world/village/context/0.3/boardResult.jsonld",
+					"@id": "https://licos.online/state/0.3/village#3/role#mason/board#1",
+					"character": {
+						"@context": "https://werewolf.world/village/context/0.3/character.jsonld",
+						"@id": "https://licos.online/state/0.3/village#3/role#mason/board#1/character#1",
+						"id": 1,
+						"name": {
+							"en": "Adil",
+							"ja": "アーディル"
+						},
+						"image": "https://werewolf.world/image/0.3/character_icons/50x50/a_50x50.png"
+					},
+					"polarity": "negative",
+					"phase": "morning",
+					"day": 1
+				}
+			]
+		},
+		{
+			"@context": "https://werewolf.world/village/context/0.3/role.jsonld",
+			"@id": "https://licos.online/state/0.3/village#3/role#madman",
+			"isMine": false,
+			"name": {
+				"en": "Madman",
+				"ja": "狂人"
+			},
+			"image": "https://werewolf.world/image/0.3/role_icons/50x50withTI/madman_50x50.png",
+			"numberOfPlayers": 1,
+			"board": [
+				{
+					"@context": "https://werewolf.world/village/context/0.3/boardResult.jsonld",
+					"@id": "https://licos.online/state/0.3/village#3/role#madman/board#1",
+					"character": {
+						"@context": "https://werewolf.world/village/context/0.3/character.jsonld",
+						"@id": "https://licos.online/state/0.3/village#3/role#madman/board#1/character#1",
+						"id": 1,
+						"name": {
+							"en": "Adil",
+							"ja": "アーディル"
+						},
+						"image": "https://werewolf.world/image/0.3/character_icons/50x50/a_50x50.png"
+					},
+					"polarity": "negative",
+					"phase": "morning",
+					"day": 1
+				}
+			]
+		},
+		{
+			"@context": "https://werewolf.world/village/context/0.3/role.jsonld",
+			"@id": "https://licos.online/state/0.3/village#3/role#werewolf",
+			"isMine": false,
+			"name": {
+				"en": "Werewolf",
+				"ja": "人狼"
+			},
+			"image": "https://werewolf.world/image/0.3/role_icons/50x50withTI/werewolf_50x50.png",
+			"numberOfPlayers": 2,
+			"board": [
+				{
+					"@context": "https://werewolf.world/village/context/0.3/boardResult.jsonld",
+					"@id": "https://licos.online/state/0.3/village#3/role#werewolf/board#1",
+					"character": {
+						"@context": "https://werewolf.world/village/context/0.3/character.jsonld",
+						"@id": "https://licos.online/state/0.3/village#3/role#werewolf/board#1/character#1",
+						"id": 1,
+						"name": {
+							"en": "Adil",
+							"ja": "アーディル"
+						},
+						"image": "https://werewolf.world/image/0.3/character_icons/50x50/a_50x50.png"
+					},
+					"polarity": "negative",
+					"phase": "morning",
+					"day": 1
+				}
+			]
+		},
+		{
+			"@context": "https://werewolf.world/village/context/0.3/role.jsonld",
+			"@id": "https://licos.online/state/0.3/village#3/role#werehamster",
+			"isMine": false,
+			"name": {
+				"en": "Werehamster",
+				"ja": "ハムスター人間"
+			},
+			"image": "https://werewolf.world/image/0.3/role_icons/50x50withTI/werehamster_50x50.png",
+			"numberOfPlayers": 1,
+			"board": [
+				{
+					"@context": "https://werewolf.world/village/context/0.3/boardResult.jsonld",
+					"@id": "https://licos.online/state/0.3/village#3/role#werehamster/board#1",
+					"character": {
+						"@context": "https://werewolf.world/village/context/0.3/character.jsonld",
+						"@id": "https://licos.online/state/0.3/village#3/role#werehamster/board#1/character#1",
+						"id": 1,
+						"name": {
+							"en": "Adil",
+							"ja": "アーディル"
+						},
+						"image": "https://werewolf.world/image/0.3/character_icons/50x50/a_50x50.png"
+					},
+					"polarity": "negative",
+					"phase": "morning",
+					"day": 1
+				}
+			]
+		}
+	]
+}
